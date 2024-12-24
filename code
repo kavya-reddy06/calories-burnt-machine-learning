@@ -54,3 +54,9 @@ print(test_data_prediction)
 
 mae = metrics.mean_absolute_error(Y_test, test_data_prediction)
 print(mae)
+
+rmse = np.sqrt(mae)
+print("Root Mean Squared Error (RMSE):", rmse)
+
+r2 = metrics.r2_score(Y_test, test_data_prediction)
+print("R² Score:", r2)
